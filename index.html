@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашняя работа</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .picture {
+            width: 280px;
+            height: 280px;
+            box-shadow: 1px 1px 4px;
+            display: inline-block;
+            margin: 20px;
+            background: gray 50%/cover no-repeat;
+            transition: .5s;
+            position: relative;
+        }
+        .picture:hover {
+            transform: translateY(-30px);
+        }
+        .picture:hover::after {
+            position: absolute;
+            bottom: -30px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+        }
+        .p1 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2016-12/1482847035_butylka-perno.jpg');
+        }
+        .p1:hover::after {
+            content: "Бутылка Перно, 1912 год";
+        }
+        .p2 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1483962549_dama-s-veerom.jpg');
+        }
+        .p2:hover::after {
+            content: "Дама с веером, 1909 год";
+        }
+        .p3 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1483967163_znanie-i-miloserdie.jpg');
+        }
+        .p3:hover::after {
+            content: "Знание и милосердие, 1897 год";
+        }
+        .p4 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1483967646_korrida-ili-smert-matadora.jpg')
+        }
+        .p4:hover::after {
+            content: "Коррида, или смерть матадора, 1933 год";
+        }
+        .p5 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1485852575_lyubitelnica-absenta.jpg')
+        }
+        .p5:hover::after {
+            content: "Любительница абсента, 1901 год";
+        }
+        .p6 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1485180135_pervoe-prichastie.jpg')
+        }
+        .p6:hover::after {
+            content: "Первое причастие, 1896 год";
+        }
+        .p7 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1485863716_portret-ambruaza-vallora.jpg')
+        }
+        .p7:hover::after {
+            content: "Портрет Амбруаза Воллара, 1910 год";
+        }
+        .p8 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1485865252_portret-fernandy-olive.jpg')
+        }
+        .p8:hover::after {
+            content: "Портрет Фернанды Оливье, 1909 год";
+        }
+        .p9 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-02/1486372062_staryy-gitarist.jpg')
+        }
+        .p9:hover::after {
+            content: "Старый гитарист, 1903 год";
+        }
+        .p10 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-02/1486478738_tri-muzykanta.jpg')
+        }
+        .p10:hover::after {
+            content: "Три музыканта, 1921 год";
+        }
+        .p11 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-02/1486476247_skripka-i-gitara.jpg')
+        }
+        .p11:hover::after {
+            content: "Гитара и скрипка, 1912 год";
+        }
+        .p12 {
+            background-image: url('http://art-assorty.ru/uploads/posts/2017-01/1485866036_semeystvo-komediantov.jpg')
+        }
+        .p12:hover::after {
+            content: "Семейство комедиантов, 1905 год";
+        }
+        section {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Лучшие работы Пикассо</h1>
+    <section>
+        <div class="picture p1"></div>
+        <div class="picture p2"></div>
+        <div class="picture p3"></div>
+        <div class="picture p4"></div>
+    </section>
+    <section>
+        <div class="picture p5"></div>
+        <div class="picture p6"></div>
+        <div class="picture p7"></div>
+        <div class="picture p8"></div>
+    </section>
+    <section>
+        <div class="picture p9"></div>
+        <div class="picture p10"></div>
+        <div class="picture p11"></div>
+        <div class="picture p12"></div>
+    </section>
+</body>
+
+</html>
