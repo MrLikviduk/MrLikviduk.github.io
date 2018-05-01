@@ -8,16 +8,16 @@ a {
 nav {
     width: 100vw;
     height: 60px;
-    background: hsl(0, 60%, 40%);
+    background: hsl(0, 60%, 45%);
     position: fixed;
-    box-shadow: 1px 1px 10px hsl(0, 60%, 30%);
+    box-shadow: 1px 1px 10px hsl(0, 60%, 35%);
     z-index: 100;
 }
 .menu-button {
     width: 50px;
     height: 50px;
     margin: 5px 8px;
-    background: hsl(0, 60%, 35%);
+    background: hsl(0, 60%, 40%);
     border-radius: 10%;
     position: relative;
     cursor: pointer;
@@ -62,7 +62,7 @@ nav {
     left: 0px;
     width: 250px;
     height: calc(100vh - 60px);
-    background: hsla(0, 60%, 50%, 0.98);
+    background: hsla(0, 60%, 45%, 0.98);
     transition: .5s;
 }
 .menu_is-open {
