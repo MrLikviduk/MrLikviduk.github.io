@@ -114,11 +114,13 @@ nav {
 }
 .main-header {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     text-align: center;
     width: 100vw;
     top: 25vh;
+}
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu_is-open {
     left: -250px;
