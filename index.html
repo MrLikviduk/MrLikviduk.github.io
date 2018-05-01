@@ -5,11 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Red Byte Games - больше, чем игры</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">RBG - это наше все!</h1>
+    <header style="height: 60px">
+        <nav>
+            <div class="menu-button" id="btn">
+                <div class="burger-element el1"></div>
+                <div class="burger-element el2"></div>
+                <div class="burger-element el3"></div>
+            </div>
+            <div class="nav-label">Главная</div>
+        </nav>
+        <div class="nav-menu menu_is-open" id="menu">
+            <div style="height: 20px;"></div>
+            <a href="#"><div class="nav-element">Главная</div></a>
+            <a href="#"><div class="nav-element">О нас</div></a>
+            <a href="#"><div class="nav-element">Галерея</div></a>
+            <a href="#"><div class="nav-element">Контакты</div></a>
+        </div>
+    </header>
+    <script>
+        btn.addEventListener('click', function() {
+            menu.classList.toggle('menu_is-open');
+        })
+    </script>
+    <main>
+        <h1>Red Byte Games - студия разработки игр</h1>
+    </main>
 </body>
 
 </html>
