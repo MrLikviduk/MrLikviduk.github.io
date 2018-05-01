@@ -13,9 +13,9 @@
     <header style="height: 60px">
         <nav>
             <div class="menu-button" id="btn">
-                <div class="burger-element el1"></div>
-                <div class="burger-element el2"></div>
-                <div class="burger-element el3"></div>
+                <div class="burger-element el1" id="el1"></div>
+                <div class="burger-element el2" id="el2"></div>
+                <div class="burger-element el3" id="el3"></div>
             </div>
             <div class="nav-label">Главная</div>
         </nav>
@@ -30,6 +30,9 @@
     <script>
         btn.addEventListener('click', function() {
             menu.classList.toggle('menu_is-open');
+            el1.classList.toggle('el1-open');
+            el2.classList.toggle('el2-open');
+            el3.classList.toggle('el3-open');
         })
     </script>
     <main>

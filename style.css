@@ -33,11 +33,22 @@ nav {
 .burger-element.el1 {
     top: 14px;
 }
+.burger-element.el1-open {
+    top: 23px;
+    transform: rotate(45deg);
+}
 .burger-element.el2 {
     top: 23px;
 }
+.burger-element.el2-open {
+    display: none;
+}
 .burger-element.el3 {
     top: 32px;
+}
+.burger-element.el3-open {
+    top: 23px;
+    transform: rotate(-45deg);
 }
 .nav-label {
     display: inline-block;
