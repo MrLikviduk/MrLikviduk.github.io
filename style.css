@@ -80,7 +80,7 @@ nav {
 .pictures {
     width: 100vw;
     height: 100vh;
-    background: fixed gray 50%/cover no-repeat;
+    background: gray 50%/cover no-repeat;
     background-image: url('https://teamzenith.files.wordpress.com/2012/08/dsc_3023.jpg');
 }
 .main-header {
