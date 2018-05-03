@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="pace.min.js"></script>
+    <script data-pace-options='{ "ajax": false }' src='pace.js'></script> -->
     <title>Red Byte Games - больше, чем игры</title>
 </head>
 
@@ -21,14 +23,22 @@
         </nav>
         <div class="nav-menu menu_is-open" id="menu">
             <div style="height: 20px;"></div>
-            <a href="#"><div class="nav-element">Главная</div></a>
-            <a href="#"><div class="nav-element">О нас</div></a>
-            <a href="#"><div class="nav-element">Галерея</div></a>
-            <a href="#"><div class="nav-element">Контакты</div></a>
+            <a href="#" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Главная</div>
+            </a>
+            <a href="#o-nas" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">О нас</div>
+            </a>
+            <a href="#" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Галерея</div>
+            </a>
+            <a href="#" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Контакты</div>
+            </a>
         </div>
     </header>
     <script>
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             menu.classList.toggle('menu_is-open');
             el1.classList.toggle('el1-open');
             el2.classList.toggle('el2-open');
@@ -38,14 +48,38 @@
     <main>
         <section class="main-section">
             <div class="pictures">
-                <div style="width: 100vw; height: 650px; background: hsla(0, 0%, 20%, 0.8); position: relative">
-                    <h1 class="main-header">Red Byte Games</h1>
-                    <hr style="border: none; background: white; width: 250px; height: 2px; position: absolute; top: 225px; left: calc((100vw - 250px) / 2);">
-                    <p class="main-paragraph">"Все всегда кажется невозможным, пока оно не сделано"</p>
+                <div style="width: 100vw; height: 100vh; background: hsla(0, 0%, 20%, 0.8); position: relative">
+                    <div style="position: absolute; top: 30%;">
+                        <h1 class="main-header">Red Byte Games</h1>
+                        <hr style="border: none; background: white; width: 250px; height: 2px;">
+                        <p class="main-paragraph">Мы создаем больше, чем игры</p>
+                    </div>
                 </div>
             </div>
         </section>
-        
+        <section class="some-important-info">
+            <div id="o-nas" style="height: 50px; width: 1px; position: absolute; top: -90px;"></div>
+            <!-- Нужно для навигации -->
+            <h1>Почему следует работать именно у нас?</h1>
+            <div class="main-info">
+                <h2>Дружелюбная атмосфера</h2>
+                <p>Для любой серьезной компании важно, чтобы хорошие идеи не пропадали в творческих умах, а находили реализацию
+                    в команде. Мы стараемся быть максимально открытыми для наших ребят, потому что гениальные мысли частенько
+                    превращаются в успешные проекты. Главное, не бояться фантазировать, предлагать и создавать.</p>
+            </div>
+            <div class="main-info">
+                <h2>Комфортные условия</h2>
+                <p>Все бытовые вопросы - завтраки, обеды, праздники и многое другое - студия берет на себя. Мы регулярно устраиваем
+                    увлекательные мероприятия, тематические вечеринки и праздники - такого комплексного подхода не выдержит
+                    ни один творческий кризис.</p>
+            </div>
+            <div class="main-info">
+                <h2>Расширение кругозора</h2>
+                <p>Red Byte Games создает условия для самосовершенствования и поощряет успехи. Наши спецы регулярно отправляются
+                    на конференции и слёты, а еще на постоянной основе посещают курсы английского, чтобы сделать корпоративные
+                    путешествия ещё приятнее.</p>
+            </div>
+        </section>
     </main>
 </body>
 

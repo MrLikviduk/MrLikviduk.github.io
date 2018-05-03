@@ -1,3 +1,172 @@
+.pace.pace-inactive {
+    display: none;
+  }
+  
+  .pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  
+    z-index: 2000;
+    position: fixed;
+    height: 60px;
+    width: 100px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .pace .pace-progress {
+    z-index: 2000;
+    position: absolute;
+    height: 60px;
+    width: 100px !important;
+  }
+  
+  .pace .pace-progress:before {
+    content: attr(data-progress-text);
+    text-align: center;
+    color: #fff;
+    background: #b82e2e;
+    border-radius: 50%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1;
+    padding: 20% 0 7px;
+    width: 50%;
+    height: 40%;
+    margin: 10px 0 0 30px;
+    display: block;
+    z-index: 999;
+    position: absolute;
+  }
+  
+  .pace .pace-progress:after {
+    border-radius: 50%;
+    border: 5px solid #b82e2e;
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100px;
+  
+    -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-animation: spin-3 2s linear infinite;
+       -moz-animation: spin-3 2s linear infinite;
+         -o-animation: spin-3 2s linear infinite;
+            animation: spin-3 2s linear infinite;
+  }
+  
+  .pace .pace-activity {
+    font-size: 15px;
+    line-height: 1;
+    z-index: 2000;
+    position: absolute;
+    height: 60px;
+    width: 100px;
+  
+    display: block;
+  }
+  
+  .pace .pace-activity:before {
+    border-radius: 50%;
+    border: 5px solid #b82e2e;
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100px;
+  
+    -webkit-animation: spin-1 2s linear infinite;
+       -moz-animation: spin-1 2s linear infinite;
+         -o-animation: spin-1 2s linear infinite;
+            animation: spin-1 2s linear infinite;
+  }
+  
+  .pace .pace-activity:after{
+    border-radius: 50%;
+    border: 5px solid #b82e2e;
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100px;
+  
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-animation: spin-2 2s linear infinite;
+       -moz-animation: spin-2 2s linear infinite;
+         -o-animation: spin-2 2s linear infinite;
+            animation: spin-2 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin-1 {
+    0%  { -webkit-transform: rotate(0deg); }
+    100%{ -webkit-transform: rotate(359deg);}
+  }
+  @-moz-keyframes spin-1 {
+    0%  { -moz-transform: rotate(0deg); }
+    100%{ -moz-transform: rotate(359deg);}
+  }
+  @-o-keyframes spin-1 {
+    0%  { -o-transform: rotate(0deg); }
+    100%{ -o-transform: rotate(359deg);}
+  }
+  @keyframes spin-1 {
+    0%  { transform: rotate(0deg); }
+    100%{ transform: rotate(359deg);}
+  }
+  
+  @-webkit-keyframes spin-2 {
+    0%  { -webkit-transform: rotate(59.8deg); }
+    100%{ -webkit-transform: rotate(418.8deg);}
+  }
+  @-moz-keyframes spin-2 {
+    0%  { -moz-transform: rotate(59.8deg); }
+    100%{ -moz-transform: rotate(418.8deg);}
+  }
+  @-o-keyframes spin-2 {
+    0%  { -o-transform: rotate(59.8deg); }
+    100%{ -o-transform: rotate(418.8deg);}
+  }
+  @keyframes spin-2 {
+    0%  { transform: rotate(59.8deg); }
+    100%{ transform: rotate(418.8deg);}
+  }
+  
+  @-webkit-keyframes spin-3 {
+    0%  { -webkit-transform: rotate(119.6deg); }
+    100%{ -webkit-transform: rotate(478.6deg);}
+  }
+  @-moz-keyframes spin-3 {
+    0%  { -moz-transform: rotate(119.6deg); }
+    100%{ -moz-transform: rotate(478.6deg);}
+  }
+  @-o-keyframes spin-3 {
+    0%  { -o-transform: rotate(119.6deg); }
+    100%{ -o-transform: rotate(478.6deg);}
+  }
+  @keyframes spin-3 {
+    0%  { transform: rotate(119.6deg); }
+    100%{ transform: rotate(478.6deg);}
+  }
 body, html {
     margin: 0;
     background: whitesmoke;
@@ -67,6 +236,9 @@ nav {
     letter-spacing: 1px;
     font-family: SFUIRegular, sans-serif;
 }
+.nav-element:hover {
+    color: hsl(0, 50%, 70%);
+}
 .nav-menu {
     position: fixed;
     top: 60px;
@@ -77,30 +249,74 @@ nav {
     transition: .5s;
     z-index: 1000;
 }
+/* @keyframes change-pictures {
+    0% {
+        background-image: url('s1_bg1.jpg');
+    }
+    20% {
+        background-image: url('s1_bg1.jpg');
+    }
+    25% {
+        background-image: url('s1_bg2.jpg');
+    }
+    45% {
+        background-image: url('s1_bg2.jpg');
+    }
+    50% {
+        background-image: url('s1_bg3.jpg');
+    }
+    70% {
+        background-image: url('s1_bg3.jpg');
+    }
+    75% {
+        background-image: url('s1_bg4.jpg');
+    }
+    95% {
+        background-image: url('s1_bg4.jpg');
+    }
+    100% {
+        background-image: url('s1_bg1.jpg');
+    }
+} */
 .pictures {
     width: 100vw;
-    height: 650px;
+    height: 100vh;
     background: gray 50%/cover no-repeat;
-    background-image: url('s1_bg.jpg');
+    background-image: url('s1_bg1.jpg');
 }
 .main-header {
     color: white;
-    position: absolute;
     text-align: center;
     width: 100vw;
-    top: 170px;
 }
 main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-paragraph {
     color: white;
-    position: absolute;
-    top: 230px;
     width: 100vw;
     text-align: center;
     font-size: 1.3rem;
 }
 .menu_is-open {
     left: -250px;
+}
+.main-info {
+    padding: 10px 20px;
+}
+.main-info > h2 {
+    text-align: center;
+}
+.some-important-info > h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    border: 5px dashed hsl(0, 60%, 45%);
+}
+.some-important-info {
+    top: 20px;
+    position: relative;
 }
