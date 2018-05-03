@@ -79,16 +79,16 @@ nav {
 }
 .pictures {
     width: 100vw;
-    height: 100vh;
+    height: 650px;
     background: gray 50%/cover no-repeat;
-    background-image: url('https://teamzenith.files.wordpress.com/2012/08/dsc_3023.jpg');
+    background-image: url('s1_bg.jpg');
 }
 .main-header {
     color: white;
     position: absolute;
     text-align: center;
     width: 100vw;
-    top: 25vh;
+    top: 170px;
 }
 main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -96,7 +96,7 @@ main {
 .main-paragraph {
     color: white;
     position: absolute;
-    top: 36vh;
+    top: 230px;
     width: 100vw;
     text-align: center;
     font-size: 1.3rem;
