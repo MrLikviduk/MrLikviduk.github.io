@@ -177,16 +177,16 @@ a {
 nav {
     width: 100vw;
     height: 60px;
-    background: hsl(0, 60%, 45%);
+    background: hsl(0, 60%,40%);
     position: fixed;
-    box-shadow: 1px 1px 10px hsl(0, 60%, 35%);
+    box-shadow: 1px 1px 10px hsl(0, 60%, 30%);
     z-index: 100;
 }
 .menu-button {
     width: 50px;
     height: 50px;
     margin: 5px 5px; 
-    background: hsl(0, 60%, 40%);
+    background: hsl(0, 60%, 35%);
     border-radius: 10%;
     position: relative;
     cursor: pointer;
@@ -245,7 +245,7 @@ nav {
     left: 0px;
     width: 250px;
     height: calc(100vh - 60px);
-    background: hsla(0, 60%, 45%, 0.98);
+    background: hsla(0, 60%, 42%, 0.98);
     transition: .5s;
     z-index: 1000;
 }
@@ -319,4 +319,46 @@ main {
 .some-important-info {
     top: 20px;
     position: relative;
+}
+.gallery > h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.gallery {
+    text-align: center;
+    position: relative;
+}
+.photo {
+    width: 40vw;
+    height: 40vw;
+    border: 2px solid hsl(0, 60%, 35%);
+    background: gray 50%/cover no-repeat;
+    margin: 4px 2px;
+    display: inline-block;
+
+}
+.photo.p1 {
+    background-image: url('s3_p1.jpg');
+}
+.photo.p2 {
+    background-image: url('s3_p2.jpg');
+}
+.photo.p3 {
+    background-image: url('s3_p3.jpg');
+}
+.photo.p4 {
+    background-image: url('s3_p4.jpg');
+}
+.photo.p5 {
+    background-image: url('s3_p5.jpg');
+}
+.photo.p6 {
+    background-image: url('s3_p6.jpg');
+}
+.photo.p7 {
+    background-image: url('s3_p7.jpg');
+}
+.photo.p8 {
+    background-image: url('s3_p8.jpg');
 }
