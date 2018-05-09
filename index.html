@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -20,6 +20,7 @@
                 <div class="burger-element el3" id="el3"></div>
             </div>
             <div class="nav-label">Главная</div>
+            <!-- <div class="login-btn" id="login-btn-id">вход</div> -->
         </nav>
         <div class="nav-menu menu_is-open" id="menu">
             <div style="height: 20px;"></div>
@@ -46,6 +47,9 @@
         })
     </script>
     <main>
+        <div class="reg-form reg-form-is-close" id="reg-form-id">
+            <div class="close-btn" id="close-btn-id">X</div>
+        </div>
         <section class="main-section">
             <div class="pictures">
                 <div style="width: 100vw; height: 100vh; background: hsla(0, 20%, 20%, 0.8); position: relative">
@@ -82,7 +86,7 @@
         </section>
         <section class="gallery">
             <div id="gallery-id" style="position: absolute; height: 50px; top: -80px; left: 0px; width: 1px;"></div>
-            <h1 id="gallery-id">Фотогалерея</h1>
+            <h1>Фотогалерея</h1>
             <div class="photo p1"></div>
             <div class="photo p2"></div>
             <div class="photo p3"></div>
@@ -92,7 +96,31 @@
             <div class="photo p7"></div>
             <div class="photo p8"></div>
         </section>
+        <section class="contacts">
+            <h1>Есть вопросы? Свяжитесь с нами!</h1>
+            <a href="mailto:info@redbytegames.ru">
+                <div class="contact-button">
+                    <img src="mail_icon.png" alt="Mail" class="icon">
+                    <div class="text">info@redbytegames.ru</div>
+                </div>
+            </a>
+            <a href="callto:+77771760373">
+                <div class="contact-button">
+                    <img src="phone_icon.png" alt="Phone" class="icon">
+                    <div class="text">+7 777 176-03-73</div>
+                </div>
+            </a>
+        </section>
     </main>
+    <div style="height: 30px;"></div>
+    <footer>
+        © RedByteGames 2018
+    </footer>
+    <script>
+        login - btn - id.addEventListener('click', function () {
+            reg - form - id.classList.toggle('reg-form-is-close');
+        })
+    </script>
 </body>
 
 </html>
