@@ -170,6 +170,7 @@
 body, html {
     margin: 0;
     background: whitesmoke;
+    position: relative;
 }
 a {
     text-decoration: none;
@@ -406,13 +407,18 @@ main {
     font-size: 1.2rem;
 }
 body > footer {
-    width: 100%;
+    box-sizing: border-box;
+    width: 100vw;
     height: 60px;
     background: #111;
     color: white;
     line-height: 60px;
     padding: 0px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
 }
 .reg-form {
     position: fixed;
