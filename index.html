@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header style="height: 60px">
+    <header>
         <nav>
             <div class="menu-button" id="btn">
                 <div class="burger-element el1" id="el1"></div>
@@ -33,7 +33,21 @@
             <a href="#gallery-id" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
                 <div class="nav-element">Галерея</div>
             </a>
+            <a href="#contacts" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Контакты</div>
+            </a>
+        </div>
+        <div class="nav-menu-for-computers">
             <a href="#" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Главная</div>
+            </a>
+            <a href="#o-nas" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">О нас</div>
+            </a>
+            <a href="#gallery-id" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Галерея</div>
+            </a>
+            <a href="#contacts" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
                 <div class="nav-element">Контакты</div>
             </a>
         </div>
@@ -96,8 +110,9 @@
             <div class="photo p7"></div>
             <div class="photo p8"></div>
         </section>
-        <section class="contacts">
-            <h1>Есть вопросы? <br>Свяжитесь с нами!</h1>
+        <section class="contacts" id="contacts">
+            <h1>Есть вопросы?
+                <br>Свяжитесь с нами!</h1>
             <a href="mailto:info@redbytegames.ru">
                 <div class="contact-button">
                     <img src="mail_icon.png" alt="Mail" class="icon">

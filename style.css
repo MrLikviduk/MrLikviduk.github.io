@@ -183,6 +183,9 @@ nav {
     box-shadow: 1px 1px 10px hsl(0, 60%, 30%);
     z-index: 100;
 }
+body > header {
+    height: 60px;
+}
 .menu-button {
     width: 50px;
     height: 50px;
@@ -250,6 +253,9 @@ nav {
     transition: .5s;
     z-index: 1000;
 }
+.nav-menu-for-computers {
+    display: none;
+}
 .login-btn {
     width: 80px;
     height: 50px;
@@ -265,7 +271,7 @@ nav {
     color: white;
     cursor: pointer;
 }
-/* @keyframes change-pictures {
+@keyframes change-pictures {
     0% {
         background-image: url('s1_bg1.jpg');
     }
@@ -293,11 +299,12 @@ nav {
     100% {
         background-image: url('s1_bg1.jpg');
     }
-} */
+}
 .pictures {
     width: 100vw;
     height: 100vh;
     background: gray 50%/cover no-repeat;
+    background-position: right bottom;
     background-image: url('s1_bg1.jpg');
 }
 .main-header {
@@ -393,18 +400,19 @@ main {
 }
 .contact-button {
     height: 50px;
-    width: 300px;
+    width: 260px;
     background: hsl(0, 60%, 45%);
-    margin: 20px;
+    margin: 15px;
     position: relative;
     border-radius: 10px;
+    display: inline-block;
 }
 .contact-button > .text {
     color: white;
     position: absolute;
     line-height: 50px;
     left: 70px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 body > footer {
     box-sizing: border-box;
@@ -445,4 +453,60 @@ body > footer {
     top: 15px;
     right: 15px;
     font-size: 1.3rem;
+}
+@media (min-width: 800px) {
+    nav {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav-menu-for-computers {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 60px;
+        background: hsl(0, 60%,40%);
+        z-index: 100;
+        text-align: center;
+    }
+    body > header {
+        height: 60px;
+    }
+    .nav-element {
+        display: inline-block;
+        line-height: 60px;
+        position: relative;
+        top: 0;
+        margin: 0 40px;
+    }
+    .main-info {
+        display: inline-block;
+        text-align: left;
+        width: 350px;
+        vertical-align: top;
+    }
+    .some-important-info {
+        text-align: center;
+    }
+    .some-important-info > h1 {
+        width: 600px;
+        margin: 20px auto 10px auto;
+    }
+    .pictures {
+        animation: change-pictures 30s linear infinite;
+    }
+    .photo {
+        width: 200px;
+        height: 200px;
+        margin: 6px 3px;
+    }
+    .gallery {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        text-align: center;
+    }
 }
