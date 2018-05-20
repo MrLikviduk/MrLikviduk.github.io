@@ -9,6 +9,16 @@
     <!-- <script src="pace.min.js"></script>
     <script data-pace-options='{ "ajax": false }' src='pace.js'></script> -->
     <title>Red Byte Games - больше, чем игры</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119540995-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119540995-1');
+    </script>
+
 </head>
 
 <body>
@@ -31,24 +41,49 @@
                 <div class="nav-element">О нас</div>
             </a>
             <a href="#gallery-id" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
-                <div class="nav-element">Галерея</div>
+                <div class="nav-element">Блог</div>
             </a>
             <a href="#contacts" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
-                <div class="nav-element">Контакты</div>
+                <div class="nav-element">Проекты</div>
             </a>
+            <a href="#contacts" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Вакансии</div>
+            </a>
+            <a href="#contacts" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+                <div class="nav-element">Тех. поддержка</div>
+            </a>
+            <div style="height: 10px;"></div>
+            <div class="contact">
+                <img class="contact-icon" src="mail_icon.png">
+                <div class="text">
+                    info@redbytegames.ru
+                </div>
+            </div>
+            <div class="contact">
+                <img class="contact-icon" src="phone_icon.png">
+                <div class="text">
+                    +7 (777) 176-03-73
+                </div>
+            </div>
         </div>
         <div class="nav-menu-for-computers">
-            <a href="#" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+            <a href="">
                 <div class="nav-element">Главная</div>
             </a>
-            <a href="#o-nas" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
+            <a href="">
                 <div class="nav-element">О нас</div>
             </a>
-            <a href="#gallery-id" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
-                <div class="nav-element">Галерея</div>
+            <a href="">
+                <div class="nav-element">Блог</div>
             </a>
-            <a href="#contacts" onclick="menu.classList.toggle('menu_is-open'); el1.classList.toggle('el1-open'); el2.classList.toggle('el2-open'); el3.classList.toggle('el3-open');">
-                <div class="nav-element">Контакты</div>
+            <a href="">
+                <div class="nav-element">Проекты</div>
+            </a>
+            <a href="">
+                <div class="nav-element">Вакансии</div>
+            </a>
+            <a href="">
+                <div class="nav-element">Тех. поддержка</div>
             </a>
         </div>
     </header>
@@ -61,9 +96,11 @@
         })
     </script>
     <main>
+        <!--
         <div class="reg-form reg-form-is-close" id="reg-form-id">
             <div class="close-btn" id="close-btn-id">X</div>
         </div>
+    -->
         <section class="main-section">
             <div class="pictures">
                 <div style="width: 100vw; height: 100vh; background: hsla(0, 20%, 20%, 0.8); position: relative">
@@ -78,53 +115,13 @@
         <section class="some-important-info">
             <div id="o-nas" style="height: 50px; width: 1px; position: absolute; top: -90px;"></div>
             <!-- Нужно для навигации -->
-            <h1>Почему следует работать именно у нас?</h1>
+            <h1>О нас</h1>
             <div class="main-info">
-                <h2>Дружелюбная атмосфера</h2>
-                <p>Для любой серьезной компании важно, чтобы хорошие идеи не пропадали в творческих умах, а находили реализацию
-                    в команде. Мы стараемся быть максимально открытыми для наших ребят, потому что гениальные мысли частенько
-                    превращаются в успешные проекты. Главное, не бояться фантазировать, предлагать и создавать.</p>
+                <p>Red Byte Games - американская игровая студия-разработчик, известная своими хитами «Last Day on Earth», «Тюряга»,
+                    «Метро 2033», «В окопе» и др. Офисы компании расположены в Волгограде и Санкт-Петербурге. Под одной крышей
+                    мы собрали в одну команду более сотни молодых и талантливых ребят из разных уголков нашей страны. В атмосфере
+                    дружбы и профессионализма рождаются проекты, полюбившиеся аудитории в 70 миллионов игроков.</p>
             </div>
-            <div class="main-info">
-                <h2>Комфортные условия</h2>
-                <p>Все бытовые вопросы - завтраки, обеды, праздники и многое другое - студия берет на себя. Мы регулярно устраиваем
-                    увлекательные мероприятия, тематические вечеринки и праздники - такого комплексного подхода не выдержит
-                    ни один творческий кризис.</p>
-            </div>
-            <div class="main-info">
-                <h2>Расширение кругозора</h2>
-                <p>Red Byte Games создает условия для самосовершенствования и поощряет успехи. Наши спецы регулярно отправляются
-                    на конференции и слёты, а еще на постоянной основе посещают курсы английского, чтобы сделать корпоративные
-                    путешествия ещё приятнее.</p>
-            </div>
-        </section>
-        <section class="gallery">
-            <div id="gallery-id" style="position: absolute; height: 50px; top: -80px; left: 0px; width: 1px;"></div>
-            <h1>Фотогалерея</h1>
-            <div class="photo p1"></div>
-            <div class="photo p2"></div>
-            <div class="photo p3"></div>
-            <div class="photo p4"></div>
-            <div class="photo p5"></div>
-            <div class="photo p6"></div>
-            <div class="photo p7"></div>
-            <div class="photo p8"></div>
-        </section>
-        <section class="contacts" id="contacts">
-            <h1>Есть вопросы?
-                <br>Свяжитесь с нами!</h1>
-            <a href="mailto:info@redbytegames.ru">
-                <div class="contact-button">
-                    <img src="mail_icon.png" alt="Mail" class="icon">
-                    <div class="text">info@redbytegames.ru</div>
-                </div>
-            </a>
-            <a href="callto:+77771760373">
-                <div class="contact-button">
-                    <img src="phone_icon.png" alt="Phone" class="icon">
-                    <div class="text">+7 777 176-03-73</div>
-                </div>
-            </a>
         </section>
     </main>
     <div style="height: 70px;"></div>
